@@ -325,6 +325,7 @@ hr {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  background: Navy;
 }
 
  .central-buzz-carousel .card {
