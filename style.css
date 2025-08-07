@@ -250,6 +250,7 @@ hr {
 }
 
 /* Card Style */
+.central-buzz-carousel .card,
 .sports-carousel .card,
 .school-carousel .card,
 .bison-lens-carousel .card {
@@ -265,6 +266,7 @@ hr {
   transition: transform 0.2s ease-in-out;
 }
 
+.central-buzz-carousel .card:hover
 .sports-carousel .card:hover,
 .school-carousel .card:hover,
 .bison-lens-carousel .card:hover {
