@@ -316,40 +316,54 @@ hr {
   }
 }
 
-/* Central Buzz */
+/* Central Buzz container */
+.central-buzz {
+  padding: 40px;
+  background-color: #f0f8ff;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+/* Headings */
+.central-buzz h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.central-buzz h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Card container (carousel style) */
 .central-buzz-carousel {
   display: flex;
   overflow-x: auto;
-  gap: 16px;
-  padding: 16px;
+  gap: 20px;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  background: navy;     /* container background */
-  color: navy;           /* default text color */
-  scrollbar-width: none; /* hide scrollbar Firefox */
+  padding: 20px;
 }
 
-
-.central-buzz-carousel::-webkit-scrollbar {
-  display: none; /* hide scrollbar Chrome/Safari */
-}
-
-.central-buzz-carousel .card {
-  min-width: 150px;
-  max-width: 180px;
-  padding: 12px;
+/* Each card */
+.central-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 280px;
   flex-shrink: 0;
-  border-left: 2px solid navy; /* vertical line */
-  background-color: white;      /* card background */
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
   scroll-snap-align: start;
-  color: black; /* card text color */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Apply border only to the first card */
+.central-card.first-card {
+  border: 3px solid #1a1a1a;
+}
 
+/* Text inside card */
 .article-buzz {
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: left;
 }
