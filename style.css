@@ -325,7 +325,7 @@ hr {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background: white;     /* container background */
+  background: navy;     /* container background */
   color: navy;           /* default text color */
   scrollbar-width: none; /* hide scrollbar Firefox */
 }
@@ -344,12 +344,10 @@ hr {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
   scroll-snap-align: start;
-  color: navy; /* card text color */
+  color: black; /* card text color */
 }
 
-.central-buzz-carousel .card:first-child {
-  border-left: none; /* no left border on first card */
-}
+
 
 .article-buzz {
   font-size: 14px;
