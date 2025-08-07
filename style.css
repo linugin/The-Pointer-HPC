@@ -330,6 +330,7 @@ hr {
   scrollbar-width: none; /* hide scrollbar Firefox */
 }
 
+
 .central-buzz-carousel::-webkit-scrollbar {
   display: none; /* hide scrollbar Chrome/Safari */
 }
@@ -346,7 +347,6 @@ hr {
   scroll-snap-align: start;
   color: black; /* card text color */
 }
-
 
 
 .article-buzz {
