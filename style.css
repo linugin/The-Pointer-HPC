@@ -326,6 +326,7 @@ hr {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   background: Navy;
+  color: white;
 }
 
  .central-buzz-carousel .card {
@@ -333,9 +334,3 @@ hr {
     max-width: 180px;
  }
 
-.central-buzz-carousel {
-  background-color: #00264d;
-  scroll-padding-left: 20px;
-  border-radius: 1px;
-  margin-bottom: 24px;
-}
