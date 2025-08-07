@@ -352,11 +352,13 @@ hr {
   background-color: white;
   padding: 20px;
   border-radius: 1px;
-  min-width: 280px;
+  min-width: 250px;
+  max-width: 300px; 
   flex-shrink: 0;
   scroll-snap-align: start;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   color: black;
+  overflow-x: auto; 
 }
 
 
@@ -368,3 +370,16 @@ hr {
   margin-top: 10px;
   text-align: left;
 }
+
+@media (max-width: 600px) {
+  .central-buzz-carousel {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .central-card {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
