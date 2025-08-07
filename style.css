@@ -325,8 +325,8 @@ hr {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background: navy;
-  color: white;
+  background: white;     /* container background */
+  color: navy;           /* default text color */
   scrollbar-width: none; /* hide scrollbar Firefox */
 }
 
@@ -339,15 +339,16 @@ hr {
   max-width: 180px;
   padding: 12px;
   flex-shrink: 0;
-  border-left: 2px solid #1a1a1a;
-  background-color: white;
+  border-left: 2px solid navy; /* vertical line */
+  background-color: white;      /* card background */
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
   scroll-snap-align: start;
+  color: navy; /* card text color */
 }
 
 .central-buzz-carousel .card:first-child {
-  border-left: none;
+  border-left: none; /* no left border on first card */
 }
 
 .article-buzz {
