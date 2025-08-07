@@ -215,6 +215,7 @@ hr {
   }
 
   /* Each card inside the carousel */
+  .bison-buzz-carousel,
   .card-carousel {
     flex: 0 0 auto; /* Prevent cards from shrinking or growing */
     scroll-snap-align: start; /* Snap each card to start */
