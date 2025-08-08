@@ -414,7 +414,7 @@ body.dark-mode .recap-card strong {
 
 body.dark-mode .event-list {
   background-color: #003366;
-  color: #e0e0e0;
+  color: black;
 }
 
 body.dark-mode .event-list:hover,
