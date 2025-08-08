@@ -147,8 +147,8 @@ body {
 
 @media (max-width: 600px) {
   .recap-card img {
-    width: 90px;
-    height: 90px;
+    width: 180px;
+    height: 180px;
   }
 }
 
