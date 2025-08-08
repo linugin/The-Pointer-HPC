@@ -103,18 +103,21 @@ body {
   outline: none;
 }
 
-/* Recap Section */
+/* Recap Section (Container only – no border here!) */
 .recap-section {
   margin-bottom: 50px;
+  padding-left: 0; /* no padding needed now */
+  border-left: none; /* remove the left border */
+}
+
+/* Recap Category – each section gets its own left border */
+.recap-category {
+  margin-bottom: 40px;
   padding-left: 15px;
   border-left: 3px solid #3c5fa3;
 }
 
-/* Recap Category */
-.recap-category {
-  margin-bottom: 40px;
-}
-
+/* Recap Category Headings */
 .recap-category h3 {
   color: #003366;
   font-weight: 700;
@@ -133,6 +136,7 @@ body {
   line-height: 1.6;
   transition: box-shadow 0.3s ease;
 }
+
 
 .recap-card img{
     width: 100%;
