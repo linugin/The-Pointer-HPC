@@ -107,7 +107,7 @@ body {
 .recap-section {
   margin-bottom: 50px;
   padding-left: 0; /* no padding needed now */
-  border-left: none; /* remove the left border */
+
 }
 
 /* Recap Category – each section gets its own left border */
@@ -187,7 +187,7 @@ hr {
   background: #00264d;
   border-radius: 6px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-  color: white;
+  color: black;
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-bottom: 40px;
 }
