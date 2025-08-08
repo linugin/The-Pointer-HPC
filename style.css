@@ -47,7 +47,7 @@ body {
 
   .banner-title {
     font-size: 45px;
-   
+
   }
 }
 
@@ -154,7 +154,7 @@ body {
     margin-bottom: 10px;
     display: block;
     margin:10px 0;
-   
+
 }
 
 .recap-card p {
@@ -236,12 +236,12 @@ hr {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     width: 300px; /* fixed width for cards */
-    background-color: navy;
+    background-color: white;
   }
 
-  
 
-  
+
+
 
 
 /* Base Carousel Container */
@@ -332,7 +332,7 @@ hr {
 /* Central Buzz container */
 .central-buzz {
   padding: 40px;
-  background-color: navy;
+  background-color: #00264d;
   color: white;
   text-align: center;
 }
@@ -395,4 +395,3 @@ hr {
     box-sizing: border-box;
   }
 }
-
