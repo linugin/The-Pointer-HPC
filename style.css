@@ -139,7 +139,6 @@ body {
 /* Images inside recap cards */
 .recap-card img {
   width: 100%;
-  max-width: 160px;
   height: auto;
   margin: 10px auto;
   display: block;
@@ -147,7 +146,7 @@ body {
 
 @media (max-width: 600px) {
   .recap-card img {
-    max-width: 160px;
+    max-width: 220px;
   }
 }
 
