@@ -138,17 +138,16 @@ body {
 
 /* Images inside recap cards */
 .recap-card img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
   margin: 10px auto;
   display: block;
 }
 
 @media (max-width: 600px) {
   .recap-card img {
-    width: 160px;
-    height: 160px;
+    max-width: 160px;
   }
 }
 
