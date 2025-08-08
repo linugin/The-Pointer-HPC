@@ -11,6 +11,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   background: #fdfdfd;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Banner Container */
@@ -47,7 +48,6 @@ body {
 
   .banner-title {
     font-size: 45px;
-
   }
 }
 
@@ -107,7 +107,6 @@ body {
 .recap-section {
   margin-bottom: 50px;
   padding-left: 0; /* no padding needed now */
-
 }
 
 /* Recap Category – each section gets its own left border */
@@ -140,21 +139,11 @@ body {
 /* Images inside recap cards */
 .recap-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 200px;
   border-radius: 50%;
   margin: 10px 0;
   display: block;
-}
-
-
-.recap-card img{
-    width: 100%;
-    height: 100%;;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    display: block;
-    margin:10px 0;
-
 }
 
 .recap-card p {
@@ -216,33 +205,28 @@ hr {
   font-weight: 500;
 }
 
-  /* Container for the cards — enables horizontal scroll and snapping */
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 16px;
-    padding: 16px;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
+/* Container for the cards — enables horizontal scroll and snapping */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 16px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
 
-  /* Each card inside the carousel */
-  .bison-buzz-carousel,
-  .card-carousel {
-    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
-    scroll-snap-align: start; /* Snap each card to start */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 300px; /* fixed width for cards */
-    background-color: white;
-  }
-
-
-
-
-
+/* Each card inside the carousel */
+.bison-buzz-carousel,
+.card-carousel {
+  flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  scroll-snap-align: start; /* Snap each card to start */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 300px; /* fixed width for cards */
+  background-color: white;
+}
 
 /* Base Carousel Container */
 .bison-lens-carousel {
@@ -253,10 +237,6 @@ hr {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-}
-
-/* Custom color for Bison Lens */
-.bison-lens-carousel {
   background-color: #00264d;
   scroll-padding-left: 20px;
   border-radius: 10px;
@@ -280,7 +260,8 @@ hr {
   transition: transform 0.2s ease-in-out;
 }
 
-.central-buzz-carousel .card:hover
+/* Fix: add missing comma here */
+.central-buzz-carousel .card:hover,
 .sports-carousel .card:hover,
 .school-carousel .card:hover,
 .bison-lens-carousel .card:hover {
@@ -374,9 +355,6 @@ hr {
   overflow-x: auto; 
 }
 
-
-
-
 /* Text inside card */
 .article-buzz {
   font-size: 1rem;
@@ -384,6 +362,7 @@ hr {
   text-align: left;
 }
 
+/* Responsive central buzz cards */
 @media (max-width: 600px) {
   .central-buzz-carousel {
     flex-direction: column;
@@ -395,3 +374,99 @@ hr {
     box-sizing: border-box;
   }
 }
+
+/* ---------------- Dark Mode Styles ---------------- */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .banner-title,
+body.dark-mode .nav-card {
+  color: #80b3ff;
+  background-color: #003366;
+}
+
+body.dark-mode .nav-card:hover,
+body.dark-mode .nav-card:focus {
+  background-color: #0055aa;
+}
+
+body.dark-mode .recap-category {
+  border-left-color: #80b3ff;
+}
+
+body.dark-mode .recap-category h3 {
+  color: #a0c8ff;
+  border-bottom-color: #80b3ff;
+}
+
+body.dark-mode .recap-card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.9);
+}
+
+body.dark-mode .recap-card strong {
+  color: #aad8ff;
+}
+
+body.dark-mode .event-list {
+  background-color: #003366;
+  color: #e0e0e0;
+}
+
+body.dark-mode .event-list:hover,
+body.dark-mode .event-list:focus-within {
+  background-color: #0055aa;
+}
+
+body.dark-mode .central-buzz {
+  background-color: #001933;
+  color: #b0cfff;
+}
+
+body.dark-mode .central-buzz h1,
+body.dark-mode .central-buzz h2 {
+  color: #b0cfff;
+}
+
+body.dark-mode .central-card {
+  background-color: #121212;
+  color: #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+body.dark-mode .social-feed a {
+  color: #aad8ff;
+}
+
+body.dark-mode .social-feed a:hover,
+body.dark-mode .social-feed a:focus {
+  color: #e0e0e0;
+}
+
+/* Optional: style the dark mode toggle button */
+#toggleDarkMode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#toggleDarkMode:hover,
+#toggleDarkMode:focus {
+  background-color: #0066cc;
+  outline: none;
+}
+
+/* End of CSS */
