@@ -389,8 +389,8 @@ body.dark-mode {
 
 body.dark-mode .banner-title,
 body.dark-mode .nav-card {
-  color: #003366;
-  background-color: #80b3ff;
+  color: #80b3ff;
+  background-color: #003366;
 }
 
 body.dark-mode .nav-card:hover,
